@@ -1,0 +1,19 @@
+{
+  "name": "solana",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "tsc --project ./tsconfig.build.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@solana/web3.js": "^2.0.0",
+    "bip39": "^3.1.0",
+    "colors": "^1.4.0",
+    "ethers": "^6.13.5",
+	"bs58": "^6.0.0"
+  }
+}
