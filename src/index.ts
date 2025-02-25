@@ -31,7 +31,7 @@ const start = async () => {
 
 	const publicKey = await getAddressFromPublicKey(keys.publicKey)
 	logger(inspect(publicKey, false, 3, true))
-
+	//	always 2UbwygKpWguH6miUbDro8SNYKdA66qXGdqqvD6diuw3q
 
 	const privateKeyBytes = (await crypto.subtle.exportKey(
 		"pkcs8",
@@ -39,7 +39,7 @@ const start = async () => {
 	  )).slice(-32)
 
 	const publicKeyBytes =  await crypto.subtle.exportKey('raw', keys.publicKey)
-	
+
 	const secretKeyBytes = new Uint8Array([
 		...new Uint8Array(privateKeyBytes),
 		...new Uint8Array(publicKeyBytes),
